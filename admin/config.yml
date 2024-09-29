@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/img" # Carpeta para subir imágenes
+public_folder: "/img"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: ""
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
